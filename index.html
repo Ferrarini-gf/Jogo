@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Pokémon Tower Defense</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="bgc"></canvas>
+<div id="menu" class="scr on"><h1>POKÉMON<span>TOWER DEFENSE</span></h1><div class="mb"><button class="big" data-go="maps">JOGAR</button><button class="big" data-go="team">TIME</button><button class="big" data-go="cfg">CONFIGURAÇÕES</button></div><p class="cr">Sprites: PMDCollab (créditos aos artistas). Pokémon © Nintendo / Game Freak.</p></div>
+<div id="maps" class="scr"><h2>Escolha o mapa</h2><div id="mapl" class="row"></div><button data-go="menu">◀ VOLTAR</button></div>
+<div id="team" class="scr"><h2>Seu time (<span id="tc">0</span>/5)</h2><div id="slots" class="row"></div><div id="coll" class="row"></div><div id="tdet"></div><div class="row"><button id="tsave">💾 SALVAR EQUIPE</button><button data-go="menu">◀ VOLTAR</button></div></div>
+<div id="cfg" class="scr"><h2>Configurações</h2><div id="cfgl"></div><div class="row"><button id="cdef">Restaurar padrão</button><button data-go="menu">◀ VOLTAR</button></div></div>
+<div id="game" class="scr"><div id="top"><span class="pill"><i class="ball" id="cb"></i><b id="co">500</b></span><span class="pill">Onda <b id="wv">0</b>/20</span><span class="pill">❤ <b id="li">20</b></span><span class="pill">👾 <b id="en">0</b></span><button id="go">▶ Onda 1</button><button id="sp">⏩ x1</button><button id="au">🔁 OFF</button><button id="ps">⏸</button><button id="mn">☰ Menu</button></div><div id="lp"></div><div id="mp"><canvas id="c" width="800" height="480"></canvas></div><div id="rp"></div></div>
+<div id="ov" hidden></div><div id="toast"></div>
+
+<script src="game.js"></script></body></html>
